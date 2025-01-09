@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1015.88 118.21">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: CascadiaMono-SemiBold, 'Cascadia Mono';
+        font-size: 55.69px;
+        font-weight: 600;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M984.61,4c10.92,0,19.8,8.88,19.8,19.8v42.13c0,4.41-1.42,8.58-4.12,12.08l-1.32,1.71.71,2.04,9.67,27.75-27.02-22.84-1.12-.95H23.81c-10.92,0-19.81-8.88-19.81-19.8V23.8C4,12.89,12.88,4,23.81,4h960.8M984.61,0H23.81C10.66,0,0,10.65,0,23.8v42.13C0,79.08,10.66,89.73,23.81,89.73h955.94l33.18,28.05c.35.3.75.43,1.14.43,1.13,0,2.16-1.11,1.71-2.39l-12.32-35.37c3.1-4.02,4.95-9.06,4.95-14.52V23.8C1008.41,10.65,997.75,0,984.61,0h0Z"/>
+  <text class="cls-1" transform="translate(31.02 65.5)"><tspan x="0" y="0">NETWORKS AND POST DIGITAL ART</tspan></text>
+</svg>

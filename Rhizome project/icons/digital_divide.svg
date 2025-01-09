@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357.35 227.43">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5, .cls-6 {
+        stroke: #1a1a1a;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        font-family: OhnoSoftieVar-Medium, 'Ohno Softie Variable';
+        font-size: 37.4px;
+        font-variation-settings: 'wght' 500;
+        font-weight: 500;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        font-family: CascadiaCode-SemiBold, 'Cascadia Code';
+        font-size: 29.83px;
+        font-weight: 600;
+      }
+
+      .cls-6 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x="2" y="2" width="353.35" height="223.43" rx="2.74" ry="2.74"/>
+  <rect class="cls-6" x="14.91" y="52.09" width="327.52" height="160.83" rx="2.74" ry="2.74"/>
+  <path class="cls-5" d="M34.22,14.69l-13.38,23.17c-1.05,1.81.26,4.08,2.35,4.08h26.75c2.09,0,3.4-2.27,2.35-4.08l-13.38-23.17c-1.05-1.81-3.66-1.81-4.71,0Z"/>
+  <g>
+    <line class="cls-1" x1="315.7" y1="17.26" x2="337.41" y2="38.98"/>
+    <line class="cls-1" x1="337.41" y1="17.26" x2="315.7" y2="38.98"/>
+  </g>
+  <line class="cls-3" x1="36.57" y1="22.49" x2="36.57" y2="31.48"/>
+  <line class="cls-2" x1="36.57" y1="36.08" x2="36.57" y2="36.16"/>
+  <rect class="cls-4" x="114.3" y="151.48" width="128.74" height="45" rx="2.74" ry="2.74"/>
+  <text class="cls-8" transform="translate(22.17 127.23)"><tspan x="0" y="0">NO INTERNET ACCESS</tspan></text>
+  <text class="cls-7" transform="translate(149.91 187.64)"><tspan x="0" y="0">OK</tspan></text>
+</svg>

@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  header {
+    height: 5vh;
+    /* border: 1px solid black; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right:20px ;
+}
+
+.site-title {
+  font-family: 'Cascadia Mono', monospace; /* Use custom font */
+  font-size: 25px; /* Adjust font size as needed */
+  font-weight: bold; /* Use normal font weight */
+  fill: #1f1f1f; /* Set text color */
+
+}
+
+#chart-container {
+  height: 70vh; 
+  /* border: 1px solid black;  */
+  box-sizing: border-box; 
+  position: relative;
+  margin: 0 auto; 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+svg {
+  display: block;
+}
+
+.chart-description{
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  height: 20vh;
+  /* border: 1px solid black; */
+}
+
+.titles{
+  /* border: 1px solid black; */
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+
+
+.articles {
+  /* border: 1px solid black; */
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+
+}
+
+.photos {
+  /* border: 1px solid black; */
+  padding-left:0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+
+}
+
+
+footer{
+  height: 5vh;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+
+.site-description{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+
+.contact-info{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: end;
+}
+  
+  svg {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .node {
+    fill: lightblue;
+    stroke: darkblue;
+    stroke-width: 1.5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Visible state */
+.node.visible {
+  opacity: 1;
+  transform: scale(1.2); /* Optional: subtle pop effect when revealed */
+}
+
+  .maincluster {
+    fill: rgb(68, 68, 68); 
+    stroke: black;
+    cursor: pointer;
+  }
+  
+
+  .cluster {
+    fill: rgb(141, 141, 141);
+    stroke: none;
+    stroke-width: 1.2px;
+    cursor: pointer;
+  }
+  
+  
+  .subcluster {
+    fill: rgba(255, 255, 255, 0);
+    stroke: rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
+
+ /* Style for subcluster labels */
+.label {
+  text-anchor: middle; /* Center the text horizontally */
+  dominant-baseline: middle; /* Center the text vertically */
+  font-family: 'Cascadia Mono', monospace; /* Use custom font */
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: 50; /* Use normal font weight */
+  fill: #1f1f1f; /* Set text color */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+  
+  .link {
+    stroke: rgba(128, 128, 128, 0.282);
+    stroke-width: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .link.visible {
+    opacity: 1;
+  }
+  
+  /* .label {
+    fill: black;
+    font-size: 12px;
+    pointer-events: none;
+  } */
+
+  .maincluster-rect {
+    fill: #ffffff; /* Background color */
+    stroke: #000; /* Border color */
+    stroke-width: 2px; /* Border width */
+  }
+  
+  .maincluster-text {
+    font-family: 'Cascadia Mono', monospace; /* Fallback to monospace */
+    font-size: 20px;
+    font-weight: bold;
+    fill: #000; /* Text color */
+    text-anchor: middle; /* Center the text horizontally */
+    dominant-baseline: middle; /* Center the text vertically */
+  }
+  
+  
+ 
+  
