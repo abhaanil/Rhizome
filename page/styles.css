@@ -63,6 +63,7 @@ body {
   font-size: 25px; 
   font-weight: bold; 
   fill: #1f1f1f; 
+  cursor: pointer;
 
 }
 
@@ -211,5 +212,12 @@ footer{
   }
   
 
+  section {
+    scroll-margin-top: 20px; /* Adjust this as needed */
+  }
+
+  .highlight {
+    background-color: yellow; /* Highlight with yellow background */
+  }
   
   
