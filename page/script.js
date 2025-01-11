@@ -437,6 +437,20 @@ node.filter(d => d.group === "cluster")
   .text(d => d.id); // Use node ID as description
 
 
+//Linking chart to description
+
+// Add click event to nodes
+node.on("click", (event, d) => {
+  const targetSection = document.getElementById(d.id); // Find the matching section by ID
+  if (targetSection) {
+    targetSection.scrollIntoView({
+      behavior: "smooth", // Smooth scrolling
+      block: "start", // Align to the top of the viewport
+    });
+  }
+});
+
+
 // Handle window resizing
 window.addEventListener("resize", () => {
   const testDiv = document.getElementById('chartbox');
