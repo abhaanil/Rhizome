@@ -381,10 +381,61 @@ function drag(simulation) {
     .on("end", dragended);
 }
 
+node.on("mouseover", (event, d) => {
+  // Highlight the node
+  if (d.group === "cluster") {
+    d3.select(event.currentTarget).select("image")
+      .transition()
+      .duration(200)
+      .attr("width", d => (clusterSizeMap[d.id]?.width || 40) * 1.2) // Increase size by 20%
+      .attr("height", d => (clusterSizeMap[d.id]?.height || 40) * 1.2)
+      .attr("x", d => -((clusterSizeMap[d.id]?.width || 40) * 1.2) / 2) // Adjust position
+      .attr("y", d => -((clusterSizeMap[d.id]?.height || 40) * 1.2) / 2);
+  }
+
+  // Highlight connected links
+  link.filter(l => l.source.id === d.id || l.target.id === d.id)
+    .transition()
+    .duration(200)
+    .attr("stroke-width", 4) // Increase link width
+    .attr("stroke", "orange"); // Change link color
+});
+
+node.on("mouseout", (event, d) => {
+  // Reset the node
+  if (d.group === "cluster") {
+    d3.select(event.currentTarget).select("image")
+      .transition()
+      .duration(200)
+      .attr("width", d => clusterSizeMap[d.id]?.width || 40)
+      .attr("height", d => clusterSizeMap[d.id]?.height || 40)
+      .attr("x", d => -(clusterSizeMap[d.id]?.width || 40) / 2)
+      .attr("y", d => -(clusterSizeMap[d.id]?.height || 40) / 2);
+  }
+
+  // Reset connected links
+  link.filter(l => l.source.id === d.id || l.target.id === d.id)
+    .transition()
+    .duration(200)
+    .attr("stroke-width", 1) // Reset link width
+    .attr("stroke", "#999"); // Reset link color
+});
+
 
 
 // Attach drag behavior to nodes
 node.call(drag(simulation));
+
+//title names on hover
+node.filter(d => d.group === "cluster")
+  .attr("href", d => clusterIconMap[d.id]) // Map the SVG path
+  .attr("width", d => clusterSizeMap[d.id]?.width || 40) // Default to 40 if not found
+  .attr("height", d => clusterSizeMap[d.id]?.height || 40)
+  .attr("x", d => -(clusterSizeMap[d.id]?.width || 40) / 2) // Center horizontally
+  .attr("y", d => -(clusterSizeMap[d.id]?.height || 40) / 2) // Center vertically
+  .append("title") // Add title for hover text
+  .text(d => d.id); // Use node ID as description
+
 
 // Handle window resizing
 window.addEventListener("resize", () => {
