@@ -1,89 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 96vh; 
+    width: 100vw;
   }
 
-  header {
+  .column1 {
+    width: 63%;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+
+.column2 {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
     height: 5vh;
-    /* border: 1px solid black; */
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0;
+    padding-top: 0px;
     padding-bottom: 0;
-    padding-left: 20px;
-    padding-right:20px ;
+
+}
+
+.blank {
+  height: 3vh;
+
+}
+
+.description {
+  border-left: 1px solid black;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+
 }
 
 .site-title {
+  font-family: 'Cascadia Mono', monospace; 
+  font-size: 25px; 
+  font-weight: bold; 
+  fill: #1f1f1f; 
+
+}
+
+.about {
   font-family: 'Cascadia Mono', monospace; /* Use custom font */
-  font-size: 25px; /* Adjust font size as needed */
+  font-size: 15px; /* Adjust font size as needed */
   font-weight: bold; /* Use normal font weight */
   fill: #1f1f1f; /* Set text color */
 
 }
 
-#chart-container {
-  height: 70vh; 
-  /* border: 1px solid black;  */
-  box-sizing: border-box; 
-  position: relative;
-  margin: 0 auto; 
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.article-title {
+  font-family: 'Cascadia Mono', monospace; /* Use custom font */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: normal; /* Use normal font weight */
+  fill: #1f1f1f; /* Set text color */
+
+}
+
+.text {
+  font-family: 'Cascadia Mono', monospace; /* Use custom font */
+  font-size: 13px; /* Adjust font size as needed */
+  font-weight: normal; /* Use normal font weight */
+  fill: #1f1f1f; /* Set text color */
+
 }
 
 svg {
   display: block;
 }
 
-.chart-description{
-  display: grid;
-  grid-template-columns: 20% 50% 30%;
-  height: 20vh;
-  /* border: 1px solid black; */
-}
-
-.titles{
-  /* border: 1px solid black; */
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-}
-
-
-
-.articles {
-  /* border: 1px solid black; */
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-
-}
-
-.photos {
-  /* border: 1px solid black; */
-  padding-left:0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-
-}
-
 
 footer{
   height: 5vh;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-right: 20px;
 }
 
@@ -168,11 +185,7 @@ footer{
     opacity: 1;
   }
   
-  /* .label {
-    fill: black;
-    font-size: 12px;
-    pointer-events: none;
-  } */
+
 
   .maincluster-rect {
     fill: #ffffff; /* Background color */
@@ -188,7 +201,12 @@ footer{
     text-anchor: middle; /* Center the text horizontally */
     dominant-baseline: middle; /* Center the text vertically */
   }
+
   
+  .chartbox {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
   
- 
   
