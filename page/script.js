@@ -46,7 +46,7 @@ const data = {
     { id: "Art", group: "subcluster" },
     { id: "Emotions", group: "subcluster" },
     { id: "Racism", group: "subcluster" },
-    { id: "NFT/Crypto", group: "cluster" },
+    { id: "NFT", group: "cluster" },
     { id: "What are NFTs", group: "subcluster" },
     { id: "Environmental Friendly NFTs?", group: "subcluster" },
     { id: "Revolution in the Art World", group: "subcluster" },
@@ -92,7 +92,7 @@ const data = {
     { source: "Networks and Post-Digital Art", target: "Capitalism" },
     { source: "Networks and Post-Digital Art", target: "Entertainment" },
     { source: "Networks and Post-Digital Art", target: "AI" },
-    { source: "Networks and Post-Digital Art", target: "NFT/Crypto" },
+    { source: "Networks and Post-Digital Art", target: "NFT" },
     { source: "Networks and Post-Digital Art", target: "Hyperrealities" },
 
     { source: "Networks and Post-Digital Art", target: "Digital Media and Crime" },
@@ -143,11 +143,11 @@ const data = {
     { source: "AI", target: "Racism" },
 
     // NFT/Crypto
-    { source: "NFT/Crypto", target: "What are NFTs" },
-    { source: "NFT/Crypto", target: "Environmental Friendly NFTs?" },
-    { source: "NFT/Crypto", target: "Revolution in the Art World" },
-    { source: "NFT/Crypto", target: "Pixel Art and NFTs" },
-    { source: "NFT/Crypto", target: "Are NFTs the Future" },
+    { source: "NFT", target: "What are NFTs" },
+    { source: "NFT", target: "Environmental Friendly NFTs?" },
+    { source: "NFT", target: "Revolution in the Art World" },
+    { source: "NFT", target: "Pixel Art and NFTs" },
+    { source: "NFT", target: "Are NFTs the Future" },
 
     // Hyperrealities
     { source: "Hyperrealities", target: "What is Reality?" },
@@ -191,7 +191,7 @@ const clusterIconMap = {
   "Capitalism": "icons/capitalism.svg",
   "Entertainment": "icons/entertainment.svg",
   "AI": "icons/ai.svg",
-  "NFT/Crypto": "icons/nft_crypto.svg",
+  "NFT": "icons/nft_crypto.svg",
   "Hyperrealities": "icons/hyperrealities.svg",
 
   "Digital Media and Crime": "icons/digital_media_crime.svg",
@@ -209,7 +209,7 @@ const clusterSizeMap = {
   "Capitalism": { width: 180, height: 180 },
   "Entertainment": { width: 210, height: 210 },
   "AI": { width: 100, height: 100 },
-  "NFT/Crypto": { width: 90, height: 90 },
+  "NFT": { width: 90, height: 90 },
   "Hyperrealities": { width: 90, height: 90 },
 
   "Digital Media and Crime": { width: 130, height: 130 },
