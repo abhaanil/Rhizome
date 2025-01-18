@@ -91,6 +91,18 @@ body {
 
 }
 
+.article-subtitle {
+  font-family: 'Cascadia Mono', monospace;
+  /* Use custom font */
+  font-size: 13px;
+  /* Adjust font size as needed */
+  font-weight: normal;
+  /* Use normal font weight */
+  fill: #1f1f1f;
+  /* Set text color */
+
+}
+
 .text {
   font-family: 'Cascadia Mono', monospace;
   /* Use custom font */
@@ -249,8 +261,32 @@ section {
   /* Highlight with yellow background */
 }
 
-.chartbox {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+.comment {
+  font-style: italic;
+}
+
+.section-link {
+  color: #888888;
+  /* Blue color */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.section-link:hover {
+  color: #1f1f1f;
+  /* Darker blue on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
+}
+
+figcaption {
+  font-size: 11px;
+
+  color: #555;
+
+}
+
+.subsection {
+  padding-left: 40px;
+
 }

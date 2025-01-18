@@ -24,7 +24,7 @@ const data = {
     { id: "Shadow Banning", group: "subcluster" },
     { id: "Intersectionality", group: "subcluster" },
 
-    { id: "New Art Media", group: "cluster" },
+    { id: "New Media Art", group: "cluster" },
     { id: "Projection Mapping", group: "subcluster" },
     { id: "3D Drawing", group: "subcluster" },
     { id: "Digital Clothing", group: "subcluster" },
@@ -88,7 +88,7 @@ const data = {
 
     { source: "Networks and Post-Digital Art", target: "Ethics" },
     { source: "Networks and Post-Digital Art", target: "Digital Divide" },
-    { source: "Networks and Post-Digital Art", target: "New Art Media" },
+    { source: "Networks and Post-Digital Art", target: "New Media Art" },
     { source: "Networks and Post-Digital Art", target: "Capitalism" },
     { source: "Networks and Post-Digital Art", target: "Entertainment" },
     { source: "Networks and Post-Digital Art", target: "AI" },
@@ -116,13 +116,13 @@ const data = {
     { source: "Digital Divide", target: "Intersectionality" },
 
     // New Art Media
-    { source: "New Art Media", target: "Projection Mapping" },
-    { source: "New Art Media", target: "3D Drawing" },
-    { source: "New Art Media", target: "Digital Clothing" },
-    { source: "New Art Media", target: "Disability Art" },
-    { source: "New Art Media", target: "Sound" },
-    { source: "New Art Media", target: "Electricity for Transduction" },
-    { source: "New Art Media", target: "Slow Art Movement" },
+    { source: "New Media Art", target: "Projection Mapping" },
+    { source: "New Media Art", target: "3D Drawing" },
+    { source: "New Media Art", target: "Digital Clothing" },
+    { source: "New Media Art", target: "Disability Art" },
+    { source: "New Media Art", target: "Sound" },
+    { source: "New Media Art", target: "Electricity for Transduction" },
+    { source: "New Media Art", target: "Slow Art Movement" },
 
 
 
@@ -187,7 +187,7 @@ const clusterIconMap = {
   "Networks and Post-Digital Art": "icons/networks.svg",
   "Ethics": "icons/ethics.svg",
   "Digital Divide": "icons/digital_divide.svg",
-  "New Art Media": "icons/new_art_media.svg",
+  "New Media Art": "icons/new_media_art.svg",
   "Capitalism": "icons/capitalism.svg",
   "Entertainment": "icons/entertainment.svg",
   "AI": "icons/ai.svg",
@@ -205,7 +205,7 @@ const clusterIconMap = {
 const clusterSizeMap = {
   "Ethics": { width: 80, height: 80 },
   "Digital Divide": { width: 160, height: 160 },
-  "New Art Media": { width: 130, height: 130 },
+  "New Media Art": { width: 130, height: 130 },
   "Capitalism": { width: 180, height: 180 },
   "Entertainment": { width: 210, height: 210 },
   "AI": { width: 100, height: 100 },
@@ -449,7 +449,6 @@ node.on("click", (event, d) => {
     });
   }
 });
-
 
 // Handle window resizing
 window.addEventListener("resize", () => {
