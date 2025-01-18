@@ -6,37 +6,37 @@ body {
 }
 
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    height: 96vh; 
-    width: 100vw;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 96vh;
+  width: 100vw;
+}
 
-  .column1 {
-    width: 63%;
-    padding-top: 20px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.column1 {
+  width: 63%;
+  padding-top: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
 }
 
 
 .column2 {
-    width: 37%;
-    display: flex;
-    flex-direction: column;
+  width: 37%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-    height: 5vh;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0px;
-    padding-bottom: 0;
+  height: 5vh;
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  padding-top: 0px;
+  padding-bottom: 0;
 
 }
 
@@ -59,34 +59,47 @@ body {
 }
 
 .site-title {
-  font-family: 'Cascadia Mono', monospace; 
-  font-size: 25px; 
-  font-weight: bold; 
-  fill: #1f1f1f; 
+  font-family: 'Cascadia Mono', monospace;
+  font-size: 25px;
+  font-weight: bold;
+  fill: #1f1f1f;
+  cursor: pointer;
 
 }
 
 .about {
-  font-family: 'Cascadia Mono', monospace; /* Use custom font */
-  font-size: 15px; /* Adjust font size as needed */
-  font-weight: bold; /* Use normal font weight */
-  fill: #1f1f1f; /* Set text color */
+  font-family: 'Cascadia Mono', monospace;
+  /* Use custom font */
+  font-size: 11px;
+  /* Adjust font size as needed */
+  font-weight: bold;
+  /* Use normal font weight */
+  fill: #6e6e6e;
+  /* Set text color */
 
 }
 
 .article-title {
-  font-family: 'Cascadia Mono', monospace; /* Use custom font */
-  font-size: 16px; /* Adjust font size as needed */
-  font-weight: normal; /* Use normal font weight */
-  fill: #1f1f1f; /* Set text color */
+  font-family: 'Cascadia Mono', monospace;
+  /* Use custom font */
+  font-size: 16px;
+  /* Adjust font size as needed */
+  font-weight: normal;
+  /* Use normal font weight */
+  fill: #1f1f1f;
+  /* Set text color */
 
 }
 
 .text {
-  font-family: 'Cascadia Mono', monospace; /* Use custom font */
-  font-size: 13px; /* Adjust font size as needed */
-  font-weight: normal; /* Use normal font weight */
-  fill: #1f1f1f; /* Set text color */
+  font-family: 'Cascadia Mono', monospace;
+  /* Use custom font */
+  font-size: 13px;
+  /* Adjust font size as needed */
+  font-weight: normal;
+  /* Use normal font weight */
+  fill: #1f1f1f;
+  /* Set text color */
 
 }
 
@@ -95,7 +108,7 @@ svg {
 }
 
 
-footer{
+footer {
   height: 5vh;
   display: flex;
   flex-direction: row;
@@ -105,108 +118,139 @@ footer{
 }
 
 
-.site-description{
+.site-description {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  }
+}
 
-.contact-info{
+.contact-info {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   align-items: end;
 }
-  
-  svg {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .node {
-    fill: lightblue;
-    stroke: darkblue;
-    stroke-width: 1.5px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
 
-  /* Visible state */
+svg {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.node {
+  fill: lightblue;
+  stroke: darkblue;
+  stroke-width: 1.5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Visible state */
 .node.visible {
   opacity: 1;
-  transform: scale(1.2); /* Optional: subtle pop effect when revealed */
+  transform: scale(1.2);
+  /* Optional: subtle pop effect when revealed */
 }
 
-  .maincluster {
-    fill: rgb(68, 68, 68); 
-    stroke: black;
-    cursor: pointer;
-  }
-  
+.maincluster {
+  fill: rgb(68, 68, 68);
+  stroke: black;
+  cursor: pointer;
+}
 
-  .cluster {
-    fill: rgb(141, 141, 141);
-    stroke: none;
-    stroke-width: 1.2px;
-    cursor: pointer;
-  }
-  
-  
-  .subcluster {
-    fill: rgba(255, 255, 255, 0);
-    stroke: rgba(0, 0, 0, 0);
-    cursor: pointer;
-  }
 
- /* Style for subcluster labels */
+.cluster {
+  fill: rgb(141, 141, 141);
+  stroke: none;
+  stroke-width: 1.2px;
+  cursor: pointer;
+}
+
+
+.subcluster {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+/* Style for subcluster labels */
 .label {
-  text-anchor: middle; /* Center the text horizontally */
-  dominant-baseline: middle; /* Center the text vertically */
-  font-family: 'Cascadia Mono', monospace; /* Use custom font */
-  font-size: 14px; /* Adjust font size as needed */
-  font-weight: 50; /* Use normal font weight */
-  fill: #1f1f1f; /* Set text color */
-  text-transform: uppercase; /* Transform text to uppercase */
+  text-anchor: middle;
+  /* Center the text horizontally */
+  dominant-baseline: middle;
+  /* Center the text vertically */
+  font-family: 'Cascadia Mono', monospace;
+  /* Use custom font */
+  font-size: 14px;
+  /* Adjust font size as needed */
+  font-weight: 50;
+  /* Use normal font weight */
+  fill: #1f1f1f;
+  /* Set text color */
+  text-transform: uppercase;
+  /* Transform text to uppercase */
 }
 
-  
-  .link {
-    stroke: rgba(128, 128, 128, 0.282);
-    stroke-width: 1px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
 
-  .link.visible {
-    opacity: 1;
-  }
-  
+.link {
+  stroke: rgba(128, 128, 128, 0.282);
+  stroke-width: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.link.visible {
+  opacity: 1;
+}
 
 
-  .maincluster-rect {
-    fill: #ffffff; /* Background color */
-    stroke: #000; /* Border color */
-    stroke-width: 2px; /* Border width */
-  }
-  
-  .maincluster-text {
-    font-family: 'Cascadia Mono', monospace; /* Fallback to monospace */
-    font-size: 20px;
-    font-weight: bold;
-    fill: #000; /* Text color */
-    text-anchor: middle; /* Center the text horizontally */
-    dominant-baseline: middle; /* Center the text vertically */
-  }
 
-  
-  .chartbox {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  
+.maincluster-rect {
+  fill: #ffffff;
+  /* Background color */
+  stroke: #000;
+  /* Border color */
+  stroke-width: 2px;
+  /* Border width */
+}
+
+.maincluster-text {
+  font-family: 'Cascadia Mono', monospace;
+  /* Fallback to monospace */
+  font-size: 20px;
+  font-weight: bold;
+  fill: #000;
+  /* Text color */
+  text-anchor: middle;
+  /* Center the text horizontally */
+  dominant-baseline: middle;
+  /* Center the text vertically */
+}
+
+
+.chartbox {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+section {
+  scroll-margin-top: 20px;
+  /* Adjust this as needed */
+}
+
+.highlight {
+  background-color: yellow;
+  /* Highlight with yellow background */
+}
+
+.chartbox {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
