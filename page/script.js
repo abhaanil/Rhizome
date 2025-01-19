@@ -79,6 +79,7 @@ const data = {
     { id: "Indigenous Futurism", group: "subcluster" },
     { id: "Cyberpunk", group: "subcluster" },
     { id: "Climate Change", group: "cluster" },
+    { id: "Emergent Strategy", group: "subcluster" },
     { id: "Virtual Materiality", group: "cluster" },
   ],
 
@@ -179,6 +180,9 @@ const data = {
     { source: "Speculative Science Fiction", target: "Transhumanism" },
     { source: "Speculative Science Fiction", target: "Indigenous Futurism" },
     { source: "Speculative Science Fiction", target: "Cyberpunk" },
+
+    // Climate Change
+    { source: "Climate Change", target: "Emergent Strategy" },
 
   ],
 };
