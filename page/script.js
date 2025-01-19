@@ -259,12 +259,6 @@ const node = svg.append("g")
   .data(data.nodes)
   .join("g");
 
-// Add circles for subcluster nodes
-node.filter(d => d.group === "subcluster")
-  .append("circle")
-  .attr("class", "subcluster")
-  .attr("r", 50); // Radius for subcluster circles
-
 
 // Add rectangle for the main cluster
 node.filter(d => d.group === "maincluster")
@@ -314,14 +308,19 @@ node.filter(d => d.group === "cluster")
 
 
 
-// Add labels only for nodes without custom icons (subclusters)
-// Add labels only for nodes without custom icons (subclusters)
+
+// Add text for subclusters
 const label = svg.append("g")
   .selectAll("text")
-  .data(data.nodes.filter(d => d.group !== "maincluster" && d.group !== "cluster")) // Exclude nodes with custom icons
+  .data(data.nodes.filter(d => d.group === "subcluster"))
   .join("text")
   .attr("class", "label")
+  .attr("x", d => d.x) // Use node positions for alignment
+  .attr("y", d => d.y + 5) // Center vertically, adjust based on font size
+  .attr("text-anchor", "middle") // Center horizontally
+  .attr("dominant-baseline", "middle") // Vertically align to the center
   .text(d => d.id);
+
 
 
 // Update tick function
@@ -449,6 +448,17 @@ node.on("click", (event, d) => {
     });
   }
 });
+
+label.on("click", (event, d) => {
+  const targetSection = document.getElementById(d.id); // Match the section by ID
+  if (targetSection) {
+    targetSection.scrollIntoView({
+      behavior: "smooth", // Smooth scrolling
+      block: "start", // Align to the top of the viewport
+    });
+  }
+});
+
 
 // Handle window resizing
 window.addEventListener("resize", () => {

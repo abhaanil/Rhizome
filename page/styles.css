@@ -81,49 +81,33 @@ body {
 
 .article-title {
   font-family: 'Cascadia Mono', monospace;
-  /* Use custom font */
   font-size: 18px;
-  /* Adjust font size as needed */
   font-weight: normal;
-  /* Use normal font weight */
   fill: #1f1f1f;
-  /* Set text color */
 
 }
 
 .article-subtitle {
   font-family: 'Cascadia Mono', monospace;
-  /* Use custom font */
   font-size: 14px;
-  /* Adjust font size as needed */
   font-weight: normal;
-  /* Use normal font weight */
   fill: #1f1f1f;
-  /* Set text color */
 
 }
 
 .article-subsubtitle {
   font-family: 'Cascadia Mono', monospace;
-  /* Use custom font */
   font-size: 13px;
-  /* Adjust font size as needed */
   font-style: italic;
-  /* Use normal font weight */
   fill: #1f1f1f;
-  /* Set text color */
 
 }
 
 .text {
   font-family: 'Cascadia Mono', monospace;
-  /* Use custom font */
   font-size: 13px;
-  /* Adjust font size as needed */
   font-weight: normal;
-  /* Use normal font weight */
   fill: #1f1f1f;
-  /* Set text color */
 
 }
 
