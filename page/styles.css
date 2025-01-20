@@ -219,24 +219,17 @@ svg {
 
 .maincluster-rect {
   fill: #ffffff;
-  /* Background color */
   stroke: #000;
-  /* Border color */
   stroke-width: 2px;
-  /* Border width */
 }
 
 .maincluster-text {
   font-family: 'Cascadia Mono', monospace;
-  /* Fallback to monospace */
   font-size: 20px;
   font-weight: bold;
   fill: #000;
-  /* Text color */
   text-anchor: middle;
-  /* Center the text horizontally */
   dominant-baseline: middle;
-  /* Center the text vertically */
 }
 
 
@@ -263,16 +256,12 @@ section {
 
 .section-link {
   color: #888888;
-  /* Blue color */
   text-decoration: none;
-  /* Remove underline */
 }
 
 .section-link:hover {
   color: #1f1f1f;
-  /* Darker blue on hover */
   text-decoration: underline;
-  /* Add underline on hover */
 }
 
 figcaption {
@@ -282,7 +271,14 @@ figcaption {
 
 }
 
-.subsection {
+/* .subsection {
   padding-left: 40px;
 
+} */
+
+.rectangle {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
