@@ -235,7 +235,7 @@ const svg = d3.select("#chart")
 
 // Create a force simulation with collision detection
 const simulation = d3.forceSimulation(data.nodes)
-  .force("link", d3.forceLink(data.links).id(d => d.id).distance(120)) // Links
+  .force("link", d3.forceLink(data.links).id(d => d.id).distance(130)) // Links
   .force("charge", d3.forceManyBody().strength(-160)) // Node repulsion
   .force("center", d3.forceCenter(width / 2, height / 2)) // Centering
   .force(
