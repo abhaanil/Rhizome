@@ -236,7 +236,7 @@ const svg = d3.select("#chart")
 // Create a force simulation with collision detection
 const simulation = d3.forceSimulation(data.nodes)
   .force("link", d3.forceLink(data.links).id(d => d.id).distance(120)) // Links
-  .force("charge", d3.forceManyBody().strength(-120)) // Node repulsion
+  .force("charge", d3.forceManyBody().strength(-160)) // Node repulsion
   .force("center", d3.forceCenter(width / 2, height / 2)) // Centering
   .force(
     "collision",
@@ -300,6 +300,17 @@ simulation.force(
     .strength(1) // Higher strength for stricter collision enforcement
 );
 
+// Adjust collision logic for nodes and subclusters
+simulation.force(
+  "collision",
+  d3.forceCollide()
+    .radius(d => {
+      const size = clusterSizeMap[d.id] || { width: 40, height: 40 }; // Default size if not defined
+      return Math.max(size.width, size.height) / 2 + 15; // Add padding (e.g., 15px) for better spacing
+    })
+    .strength(1) // Higher strength for stricter collision enforcement
+);
+
 
 // Add icons for cluster nodes
 node.filter(d => d.group === "cluster")
@@ -329,32 +340,26 @@ const label = svg.append("g")
 
 // Update tick function
 simulation.on("tick", () => {
-  const padding = 20; // Minimum space from the edges
+  const padding = 20; // Space from container edges
 
-  // Update link positions and clamp within bounds
   link
     .attr("x1", d => Math.max(padding, Math.min(width - padding, d.source.x)))
     .attr("y1", d => Math.max(padding, Math.min(height - padding, d.source.y)))
     .attr("x2", d => Math.max(padding, Math.min(width - padding, d.target.x)))
     .attr("y2", d => Math.max(padding, Math.min(height - padding, d.target.y)));
 
-  // Update node positions and clamp within bounds
   node.attr("transform", d => {
-    const nodePadding = 50; // Add extra padding for larger nodes
-    const radius = Math.max(clusterSizeMap[d.id]?.width || 40, clusterSizeMap[d.id]?.height || 40) / 2;
-
-    // Ensure nodes stay within bounds
+    const radius = Math.max(clusterSizeMap[d.id]?.width || 40, clusterSizeMap[d.id]?.height || 40) / 2 + 10;
     d.x = Math.max(padding + radius, Math.min(width - padding - radius, d.x));
     d.y = Math.max(padding + radius, Math.min(height - padding - radius, d.y));
-
     return `translate(${d.x},${d.y})`;
   });
 
-  // Update label positions to match nodes
   label
     .attr("x", d => Math.max(padding, Math.min(width - padding, d.x)))
     .attr("y", d => Math.max(padding, Math.min(height - padding, d.y)));
 });
+
 
 
 
