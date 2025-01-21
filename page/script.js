@@ -49,7 +49,7 @@ const data = {
     { id: "NFT", group: "cluster" },
     { id: "What are NFTs", group: "subcluster" },
     { id: "Environmental Friendly NFTs?", group: "subcluster" },
-    { id: "Revolution in the Art World", group: "subcluster" },
+    { id: "Revolution in Art", group: "subcluster" },
     { id: "Pixel Art and NFTs", group: "subcluster" },
     { id: "Are NFTs the Future", group: "subcluster" },
     { id: "Hyperrealities", group: "cluster" },
@@ -146,7 +146,7 @@ const data = {
     // NFT/Crypto
     { source: "NFT", target: "What are NFTs" },
     { source: "NFT", target: "Environmental Friendly NFTs?" },
-    { source: "NFT", target: "Revolution in the Art World" },
+    { source: "NFT", target: "Revolution in Art" },
     { source: "NFT", target: "Pixel Art and NFTs" },
     { source: "NFT", target: "Are NFTs the Future" },
 
