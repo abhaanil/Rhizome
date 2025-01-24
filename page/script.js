@@ -71,8 +71,6 @@ const data = {
     { id: "Deepfake", group: "subcluster" },
     { id: "Camera Filters", group: "subcluster" },
     { id: "Intersectional Feminism", group: "subcluster" },
-    { id: "Anxiety", group: "subcluster" },
-    { id: "Influencers", group: "subcluster" },
     { id: "Speculative Science Fiction", group: "cluster" },
     { id: "Solar Punk", group: "subcluster" },
     { id: "Transhumanism", group: "subcluster" },
@@ -172,8 +170,6 @@ const data = {
     { source: "Social Media", target: "Deepfake" },
     { source: "Social Media", target: "Camera Filters" },
     { source: "Social Media", target: "Intersectional Feminism" },
-    { source: "Social Media", target: "Anxiety" },
-    { source: "Social Media", target: "Influencers" },
 
     // Speculative Science Fiction
     { source: "Speculative Science Fiction", target: "Solar Punk" },
