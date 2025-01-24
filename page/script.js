@@ -30,7 +30,7 @@ const data = {
     { id: "Digital Clothing", group: "subcluster" },
     { id: "Disability Art", group: "subcluster" },
     { id: "Sound", group: "subcluster" },
-    { id: "Electricity for Transduction", group: "subcluster" },
+    { id: "Interactive Art", group: "subcluster" },
     { id: "Slow Art Movement", group: "subcluster" },
 
     { id: "Capitalism", group: "cluster" },
@@ -120,7 +120,7 @@ const data = {
     { source: "New Media Art", target: "Digital Clothing" },
     { source: "New Media Art", target: "Disability Art" },
     { source: "New Media Art", target: "Sound" },
-    { source: "New Media Art", target: "Electricity for Transduction" },
+    { source: "New Media Art", target: "Interactive Art" },
     { source: "New Media Art", target: "Slow Art Movement" },
 
 
