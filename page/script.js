@@ -68,7 +68,7 @@ const data = {
     { id: "Social Media", group: "cluster" },
     { id: "TikTok", group: "subcluster" },
     { id: "Algorithm", group: "subcluster" },
-    { id: "Deepfake", group: "subcluster" },
+    { id: "Influencer Culture", group: "subcluster" },
     { id: "Camera Filters", group: "subcluster" },
     { id: "Intersectional Feminism", group: "subcluster" },
     { id: "Speculative Science Fiction", group: "cluster" },
@@ -167,7 +167,7 @@ const data = {
     // Social Media
     { source: "Social Media", target: "TikTok" },
     { source: "Social Media", target: "Algorithm" },
-    { source: "Social Media", target: "Deepfake" },
+    { source: "Social Media", target: "Influencer Culture" },
     { source: "Social Media", target: "Camera Filters" },
     { source: "Social Media", target: "Intersectional Feminism" },
 
