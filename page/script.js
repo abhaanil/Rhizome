@@ -25,7 +25,7 @@ const data = {
     { id: "Intersectionality", group: "subcluster" },
 
     { id: "New Media Art", group: "cluster" },
-    { id: "Projection Mapping", group: "subcluster" },
+    { id: "Post Digital Art", group: "subcluster" },
     { id: "3D Drawing", group: "subcluster" },
     { id: "Digital Clothing", group: "subcluster" },
     { id: "Disability Art", group: "subcluster" },
@@ -115,7 +115,7 @@ const data = {
     { source: "Digital Divide", target: "Intersectionality" },
 
     // New Art Media
-    { source: "New Media Art", target: "Projection Mapping" },
+    { source: "New Media Art", target: "Post Digital Art" },
     { source: "New Media Art", target: "3D Drawing" },
     { source: "New Media Art", target: "Digital Clothing" },
     { source: "New Media Art", target: "Disability Art" },
