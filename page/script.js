@@ -203,20 +203,20 @@ const clusterIconMap = {
 };
 
 const clusterSizeMap = {
-  "Ethics": { width: 80, height: 80 },
-  "Digital Divide": { width: 160, height: 160 },
-  "New Media Art": { width: 130, height: 130 },
-  "Capitalism": { width: 180, height: 180 },
-  "Entertainment": { width: 210, height: 210 },
-  "AI": { width: 100, height: 100 },
-  "NFT": { width: 90, height: 90 },
-  "Hyperrealities": { width: 90, height: 90 },
+  "Ethics": { width: 100, height: 100 },
+  "Digital Divide": { width: 210, height: 210 },
+  "New Media Art": { width: 150, height: 150 },
+  "Capitalism": { width: 220, height: 220 },
+  "Entertainment": { width: 230, height: 230 },
+  "AI": { width: 120, height: 120 },
+  "NFT": { width: 110, height: 110 },
+  "Hyperrealities": { width: 110, height: 110 },
 
-  "Digital Media and Crime": { width: 130, height: 130 },
-  "Social Media": { width: 150, height: 150 },
-  "Speculative Science Fiction": { width: 170, height: 170 },
-  "Climate Change": { width: 100, height: 100 },
-  "Virtual Materiality": { width: 120, height: 120 }
+  "Digital Media and Crime": { width: 150, height: 150 },
+  "Social Media": { width: 170, height: 170 },
+  "Speculative Science Fiction": { width: 190, height: 190 },
+  "Climate Change": { width: 120, height: 120 },
+  "Virtual Materiality": { width: 140, height: 140 }
 
 };
 
@@ -264,9 +264,9 @@ const node = svg.append("g")
 node.filter(d => d.group === "maincluster")
   .append("rect")
   .attr("class", "maincluster-rect")
-  .attr("x", -150) // Center horizontally
-  .attr("y", -30)  // Center vertically
-  .attr("width", 360) // Width of the rectangle
+  .attr("x", -180) // Center horizontally
+  .attr("y", -31)  // Center vertically
+  .attr("width", 420) // Width of the rectangle
   .attr("height", 40) // Height of the rectangle
   .attr("rx", 15) // Rounded corners
   .attr("ry", 15); // Rounded corners
