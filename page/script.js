@@ -19,7 +19,6 @@ const data = {
 
     { id: "Digital Divide", group: "cluster" },
     { id: "Accessibility to Technology", group: "subcluster" },
-    { id: "Shadow Banning", group: "subcluster" },
     { id: "Intersectionality", group: "subcluster" },
 
     { id: "New Media Art", group: "cluster" },
@@ -33,22 +32,26 @@ const data = {
     { id: "Capitalism", group: "cluster" },
     { id: "Resting as Protest", group: "subcluster" },
     { id: "Anti-Capitalist Artwork", group: "subcluster" },
+
     { id: "Entertainment", group: "cluster" },
     { id: "Video Games", group: "subcluster" },
     { id: "Music", group: "subcluster" },
     { id: "Virtual Bloggers", group: "subcluster" },
     { id: "Hyper Real Parks", group: "subcluster" },
     { id: "Immersive Experiences", group: "subcluster" },
+
     { id: "AI", group: "cluster" },
     { id: "Art", group: "subcluster" },
     { id: "Emotions", group: "subcluster" },
     { id: "Racism", group: "subcluster" },
+
     { id: "NFT", group: "cluster" },
     { id: "What are NFTs", group: "subcluster" },
     { id: "Environmental Friendly NFTs?", group: "subcluster" },
     { id: "Revolution in Art", group: "subcluster" },
     { id: "Pixel Art and NFTs", group: "subcluster" },
     { id: "Are NFTs the Future", group: "subcluster" },
+
     { id: "Hyperrealities", group: "cluster" },
     { id: "What is Reality?", group: "subcluster" },
     { id: "What is Time?", group: "subcluster" },
@@ -62,19 +65,23 @@ const data = {
     { id: "Misinformation", group: "subcluster" },
     { id: "Sexual Crimes on VR", group: "subcluster" },
     { id: "Being Weaponized", group: "subcluster" },
+
     { id: "Social Media", group: "cluster" },
     { id: "TikTok", group: "subcluster" },
     { id: "Algorithm", group: "subcluster" },
     { id: "Influencer Culture", group: "subcluster" },
     { id: "Camera Filters", group: "subcluster" },
     { id: "Intersectional Feminism", group: "subcluster" },
+
     { id: "Speculative Science Fiction", group: "cluster" },
     { id: "Solar Punk", group: "subcluster" },
     { id: "Transhumanism", group: "subcluster" },
     { id: "Indigenous Futurism", group: "subcluster" },
     { id: "Cyberpunk", group: "subcluster" },
+
     { id: "Climate Change", group: "cluster" },
     { id: "Emergent Strategy", group: "subcluster" },
+
     { id: "Virtual Materiality", group: "cluster" },
   ],
 
@@ -106,7 +113,6 @@ const data = {
 
     // Digital Divide
     { source: "Digital Divide", target: "Accessibility to Technology" },
-    { source: "Digital Divide", target: "Shadow Banning" },
     { source: "Digital Divide", target: "Intersectionality" },
 
     // New Art Media
