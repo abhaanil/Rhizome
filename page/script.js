@@ -19,7 +19,6 @@ const data = {
     { id: "Artists and Compensation", group: "subcluster" },
 
     { id: "Digital Divide", group: "cluster" },
-    { id: "Disability and Crip Art", group: "subcluster" },
     { id: "Accessibility to Technology", group: "subcluster" },
     { id: "Shadow Banning", group: "subcluster" },
     { id: "Intersectionality", group: "subcluster" },
@@ -28,10 +27,10 @@ const data = {
     { id: "Post Digital Art", group: "subcluster" },
     { id: "3D Drawing", group: "subcluster" },
     { id: "Digital Clothing", group: "subcluster" },
-    { id: "Disability Art", group: "subcluster" },
     { id: "Sound", group: "subcluster" },
     { id: "Interactive Art", group: "subcluster" },
     { id: "Slow Art Movement", group: "subcluster" },
+    { id: "Disability and Crip Art", group: "subcluster" },
 
     { id: "Capitalism", group: "cluster" },
     { id: "Resting as Protest", group: "subcluster" },
@@ -109,7 +108,6 @@ const data = {
     { source: "Ethics", target: "Artists and Compensation" },
 
     // Digital Divide
-    { source: "Digital Divide", target: "Disability and Crip Art" },
     { source: "Digital Divide", target: "Accessibility to Technology" },
     { source: "Digital Divide", target: "Shadow Banning" },
     { source: "Digital Divide", target: "Intersectionality" },
@@ -118,7 +116,7 @@ const data = {
     { source: "New Media Art", target: "Post Digital Art" },
     { source: "New Media Art", target: "3D Drawing" },
     { source: "New Media Art", target: "Digital Clothing" },
-    { source: "New Media Art", target: "Disability Art" },
+    { source: "New Media Art", target: "Disability and Crip Art" },
     { source: "New Media Art", target: "Sound" },
     { source: "New Media Art", target: "Interactive Art" },
     { source: "New Media Art", target: "Slow Art Movement" },
