@@ -14,7 +14,6 @@ const data = {
     { id: "Ethics", group: "cluster" },
     { id: "Mans VR World", group: "subcluster" },
     { id: "Women's Rights", group: "subcluster" },
-    { id: "Race and Diversity", group: "subcluster" },
     { id: "Ethics as Artists", group: "subcluster" },
     { id: "Artists and Compensation", group: "subcluster" },
 
@@ -25,7 +24,6 @@ const data = {
 
     { id: "New Media Art", group: "cluster" },
     { id: "Post Digital Art", group: "subcluster" },
-    { id: "3D Drawing", group: "subcluster" },
     { id: "Digital Clothing", group: "subcluster" },
     { id: "Sound", group: "subcluster" },
     { id: "Interactive Art", group: "subcluster" },
@@ -103,7 +101,6 @@ const data = {
     // Ethics
     { source: "Ethics", target: "Mans VR World" },
     { source: "Ethics", target: "Women's Rights" },
-    { source: "Ethics", target: "Race and Diversity" },
     { source: "Ethics", target: "Ethics as Artists" },
     { source: "Ethics", target: "Artists and Compensation" },
 
@@ -114,7 +111,6 @@ const data = {
 
     // New Art Media
     { source: "New Media Art", target: "Post Digital Art" },
-    { source: "New Media Art", target: "3D Drawing" },
     { source: "New Media Art", target: "Digital Clothing" },
     { source: "New Media Art", target: "Disability and Crip Art" },
     { source: "New Media Art", target: "Sound" },
