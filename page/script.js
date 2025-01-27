@@ -82,6 +82,7 @@ const data = {
     { id: "Emergent Strategy", group: "subcluster" },
 
     { id: "Virtual Materiality", group: "cluster" },
+    { id: "Remixing", group: "subcluster" },
   ],
 
   links: [
@@ -177,6 +178,9 @@ const data = {
 
     // Climate Change
     { source: "Climate Change", target: "Emergent Strategy" },
+
+    // Virtual Materiality
+    { source: "Virtual Materiality", target: "Remixing" },
 
   ],
 };
