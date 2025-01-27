@@ -61,10 +61,9 @@ const data = {
     { id: "Donna Haraway", group: "subcluster" },
 
     { id: "Digital Media and Crime", group: "cluster" },
-    { id: "Deepfake Pornography", group: "subcluster" },
+    { id: "Deepfake", group: "subcluster" },
     { id: "Misinformation", group: "subcluster" },
-    { id: "Sexual Crimes on VR", group: "subcluster" },
-    { id: "Being Weaponized", group: "subcluster" },
+    { id: "Sexual Crimes", group: "subcluster" },
 
     { id: "Social Media", group: "cluster" },
     { id: "TikTok", group: "subcluster" },
@@ -159,10 +158,9 @@ const data = {
 
 
     // Digital Media and Crime
-    { source: "Digital Media and Crime", target: "Deepfake Pornography" },
+    { source: "Digital Media and Crime", target: "Deepfake" },
     { source: "Digital Media and Crime", target: "Misinformation" },
-    { source: "Digital Media and Crime", target: "Sexual Crimes on VR" },
-    { source: "Digital Media and Crime", target: "Being Weaponized" },
+    { source: "Digital Media and Crime", target: "Sexual Crimes" },
 
     // Social Media
     { source: "Social Media", target: "TikTok" },
