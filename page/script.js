@@ -54,9 +54,8 @@ const data = {
 
     { id: "Hyperrealities", group: "cluster" },
     { id: "What is Reality?", group: "subcluster" },
-    { id: "What is Time?", group: "subcluster" },
     { id: "Post-Humanism", group: "subcluster" },
-    { id: "Color Blindness Paradox", group: "subcluster" },
+    { id: "Simulcrum", group: "subcluster" },
     { id: "Metaverse", group: "subcluster" },
     { id: "Donna Haraway", group: "subcluster" },
 
@@ -83,6 +82,8 @@ const data = {
 
     { id: "Virtual Materiality", group: "cluster" },
     { id: "Remixing", group: "subcluster" },
+
+    { id: "Rhizome", group: "cluster" },
   ],
 
   links: [
@@ -103,6 +104,7 @@ const data = {
     { source: "Networks and Post-Digital Art", target: "Speculative Science Fiction" },
     { source: "Networks and Post-Digital Art", target: "Climate Change" },
     { source: "Networks and Post-Digital Art", target: "Virtual Materiality" },
+    { source: "Networks and Post-Digital Art", target: "Rhizome" },
 
 
     // Ethics
@@ -150,9 +152,8 @@ const data = {
 
     // Hyperrealities
     { source: "Hyperrealities", target: "What is Reality?" },
-    { source: "Hyperrealities", target: "What is Time?" },
     { source: "Hyperrealities", target: "Post-Humanism" },
-    { source: "Hyperrealities", target: "Color Blindness Paradox" },
+    { source: "Hyperrealities", target: "Simulcrum" },
     { source: "Hyperrealities", target: "Metaverse" },
     { source: "Hyperrealities", target: "Donna Haraway" },
 
@@ -201,6 +202,7 @@ const clusterIconMap = {
   "Speculative Science Fiction": "icons/speculative_science_fiction.svg",
   "Climate Change": "icons/climate_change.svg",
   "Virtual Materiality": "icons/virtual_materiality.svg",
+  "Rhizome": "icons/Rhizome.svg",
 
 };
 
@@ -218,7 +220,8 @@ const clusterSizeMap = {
   "Social Media": { width: 170, height: 170 },
   "Speculative Science Fiction": { width: 190, height: 190 },
   "Climate Change": { width: 120, height: 120 },
-  "Virtual Materiality": { width: 140, height: 140 }
+  "Virtual Materiality": { width: 140, height: 140 },
+  "Rhizome": { width: 70, height: 70 },
 
 };
 
@@ -234,7 +237,7 @@ const svg = d3.select("#chart")
 // Create a force simulation with collision detection
 const simulation = d3.forceSimulation(data.nodes)
   .force("link", d3.forceLink(data.links).id(d => d.id).distance(130)) // Links
-  .force("charge", d3.forceManyBody().strength(-160)) // Node repulsion
+  .force("charge", d3.forceManyBody().strength(-90)) // Node repulsion
   .force("center", d3.forceCenter(width / 2, height / 2)) // Centering
   .force(
     "collision",
