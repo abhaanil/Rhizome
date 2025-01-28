@@ -57,7 +57,7 @@ const data = {
     { id: "Post-Humanism", group: "subcluster" },
     { id: "Simulcrum", group: "subcluster" },
     { id: "Metaverse", group: "subcluster" },
-    { id: "Donna Haraway", group: "subcluster" },
+    { id: "The Uncanny Valley", group: "subcluster" },
 
     { id: "Digital Media and Crime", group: "cluster" },
     { id: "Deepfake", group: "subcluster" },
@@ -155,7 +155,7 @@ const data = {
     { source: "Hyperrealities", target: "Post-Humanism" },
     { source: "Hyperrealities", target: "Simulcrum" },
     { source: "Hyperrealities", target: "Metaverse" },
-    { source: "Hyperrealities", target: "Donna Haraway" },
+    { source: "Hyperrealities", target: "The Uncanny Valley" },
 
 
 
