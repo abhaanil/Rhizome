@@ -30,8 +30,7 @@ const data = {
     { id: "Disability and Crip Art", group: "subcluster" },
 
     { id: "Capitalism", group: "cluster" },
-    { id: "Resting as Protest", group: "subcluster" },
-    { id: "Anti-Capitalist Artwork", group: "subcluster" },
+    { id: "Anti-Capitalist", group: "subcluster" },
 
     { id: "Entertainment", group: "cluster" },
     { id: "Video Games", group: "subcluster" },
@@ -128,8 +127,7 @@ const data = {
 
 
     // Capitalism
-    { source: "Capitalism", target: "Resting as Protest" },
-    { source: "Capitalism", target: "Anti-Capitalist Artwork" },
+    { source: "Capitalism", target: "Anti-Capitalist" },
 
     // Entertainment
     { source: "Entertainment", target: "Video Games" },
