@@ -205,21 +205,21 @@ const clusterIconMap = {
 };
 
 const clusterSizeMap = {
-  "Ethics": { width: 100, height: 100 },
-  "Digital Divide": { width: 210, height: 210 },
-  "New Media Art": { width: 150, height: 150 },
+  "Ethics": { width: 110, height: 110 },
+  "Digital Divide": { width: 250, height: 250 },
+  "New Media Art": { width: 140, height: 140 },
   "Capitalism": { width: 220, height: 220 },
-  "Entertainment": { width: 230, height: 230 },
-  "AI": { width: 120, height: 120 },
-  "NFT": { width: 110, height: 110 },
-  "Hyperrealities": { width: 110, height: 110 },
+  "Entertainment": { width: 250, height: 250 },
+  "AI": { width: 130, height: 130 },
+  "NFT": { width: 120, height: 120 },
+  "Hyperrealities": { width: 120, height: 120 },
 
-  "Digital Media and Crime": { width: 150, height: 150 },
-  "Social Media": { width: 170, height: 170 },
-  "Speculative Science Fiction": { width: 190, height: 190 },
-  "Climate Change": { width: 120, height: 120 },
-  "Virtual Materiality": { width: 140, height: 140 },
-  "Rhizome": { width: 70, height: 70 },
+  "Digital Media and Crime": { width: 180, height: 180 },
+  "Social Media": { width: 180, height: 180 },
+  "Speculative Science Fiction": { width: 200, height: 200 },
+  "Climate Change": { width: 130, height: 130 },
+  "Virtual Materiality": { width: 150, height: 150 },
+  "Rhizome": { width: 90, height: 90 },
 
 };
 
@@ -234,8 +234,8 @@ const svg = d3.select("#chart")
 
 // Create a force simulation with collision detection
 const simulation = d3.forceSimulation(data.nodes)
-  .force("link", d3.forceLink(data.links).id(d => d.id).distance(130)) // Links
-  .force("charge", d3.forceManyBody().strength(-90)) // Node repulsion
+  .force("link", d3.forceLink(data.links).id(d => d.id).distance(110)) // Links
+  .force("charge", d3.forceManyBody().strength(-40)) // Node repulsion
   .force("center", d3.forceCenter(width / 2, height / 2)) // Centering
   .force(
     "collision",
