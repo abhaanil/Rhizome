@@ -35,7 +35,6 @@ const data = {
     { id: "Entertainment", group: "cluster" },
     { id: "Video Games", group: "subcluster" },
     { id: "Music", group: "subcluster" },
-    { id: "Virtual Bloggers", group: "subcluster" },
     { id: "Hyper Real Parks", group: "subcluster" },
     { id: "Immersive Experiences", group: "subcluster" },
 
@@ -132,7 +131,6 @@ const data = {
     // Entertainment
     { source: "Entertainment", target: "Video Games" },
     { source: "Entertainment", target: "Music" },
-    { source: "Entertainment", target: "Virtual Bloggers" },
     { source: "Entertainment", target: "Hyper Real Parks" },
     { source: "Entertainment", target: "Immersive Experiences" },
 
