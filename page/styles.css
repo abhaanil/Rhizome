@@ -118,6 +118,8 @@ body {
     /* Takes up x space */
     text-align: center;
     align-items: baseline;
+    cursor: pointer;
+    z-index: 1000;
   }
 
   .hamburger-menu {
@@ -467,4 +469,39 @@ figcaption {
   border-radius: 5px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+/* Initially hide the info section */
+#infoSection {
+  display: none;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.about {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f1f1f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.whatisit {
+
+  font-family: 'Cascadia Mono', monospace;
+  font-size: 14px;
+  fill: #000;
+
+}
+
+#infoSectionMobile {
+  display: none;
+
+}
+
+@media (max-width: 768px) {
+  #infoSectionMobile {
+    display: block;
+  }
 }

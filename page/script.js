@@ -542,6 +542,19 @@ label.on("click", (event, d) => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("aboutBtn").addEventListener("click", function () {
+    document.getElementById("chartbox").style.display = "none"; // Hide chart
+    document.getElementById("infoSection").style.display = "block"; // Show new section
+  });
+});
+
+function goBack() {
+  document.getElementById("chartbox").style.display = "block"; // Show chart again
+  document.getElementById("infoSection").style.display = "none"; // Hide info section
+}
+
+
 
 
 // Handle window resizing
