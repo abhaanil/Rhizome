@@ -32,6 +32,15 @@ body {
 
 }
 
+.column2 img {
+  max-width: 100%;
+  /* Prevents images from overflowing */
+  height: auto;
+  /* Maintains aspect ratio */
+  display: block;
+  /* Removes unwanted extra space */
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
