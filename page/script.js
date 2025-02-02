@@ -222,6 +222,50 @@ const clusterSizeMap = {
 
 };
 
+const clusters = [
+  "Ethics", "Digital Divide", "New Media Art", "Capitalism", "Entertainment",
+  "AI", "NFT", "Hyperrealities", "Digital Media and Crime", "Social Media",
+  "Speculative Science Fiction", "Climate Change", "Virtual Materiality", "Rhizome"
+];
+
+function toggleMenu() {
+  const menu = document.getElementById("dropdownMenu");
+  menu.classList.toggle("show"); // Toggle dropdown visibility
+}
+
+// Dynamically populate the dropdown
+const menu = document.getElementById("dropdownMenu");
+menu.innerHTML = ""; // Clear previous entries if any
+clusters.forEach(cluster => {
+  const li = document.createElement("li");
+  li.textContent = cluster;
+
+  li.onclick = (event) => {
+    event.stopPropagation(); // Prevent menu from closing on click
+
+    const target = document.getElementById(cluster);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      // Hide only the dropdown menu, not the whole mobile header
+      document.getElementById("dropdownMenu").classList.remove("show");
+    }
+  };
+  menu.appendChild(li);
+});
+
+// Hide dropdown menu when clicking outside
+document.addEventListener("click", (event) => {
+  const menu = document.getElementById("dropdownMenu");
+  const hamburger = document.querySelector(".hamburger-menu");
+
+  // Ensure the mobile header remains visible
+  if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+    menu.classList.remove("show"); // Hide only the dropdown, not the header
+  }
+});
+
+
 
 
 // Create an SVG container
