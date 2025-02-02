@@ -49,13 +49,15 @@ body {
     overflow-y: none;
     /* Enable scrolling */
     padding-left: 10;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
   }
 
   .column2 {
     width: 100%;
     flex: 1;
     /* Ensures it takes up remaining space */
-    max-height: 70vh;
+    max-height: 75vh;
     /* Prevents it from growing infinitely */
     overflow-y: auto;
     /* Enables scrolling */
@@ -100,6 +102,12 @@ body {
 .blank {
   height: 3vh;
 
+}
+
+@media (max-width: 768px) {
+  .blank {
+    display: none;
+  }
 }
 
 .description {
