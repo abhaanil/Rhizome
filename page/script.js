@@ -5,6 +5,7 @@ const height = testDiv.offsetHeight;
 
 console.log('asdf =>', width, height);
 
+
 // Clusters and Subclusters Data
 
 const data = {
@@ -180,6 +181,8 @@ const data = {
   ],
 };
 
+
+
 const clusterIconMap = {
   "Networks and Post-Digital Art": "icons/networks.svg",
   "Ethics": "icons/ethics.svg",
@@ -226,6 +229,37 @@ const svg = d3.select("#chart")
   .append("svg")
   .attr("width", width)
   .attr("height", height);
+
+// Append a path for the yellow stroke
+const mousePath = svg.append("path")
+  .attr("stroke", "yellow")
+  .attr("stroke-width", 5)
+  .attr("fill", "none");
+
+// Store the trail points
+let trailPoints = [];
+
+// Mouse move event
+svg.on("mousemove", (event) => {
+  const [x, y] = d3.pointer(event); // Get mouse coordinates
+
+  // Add new point to the trail
+  trailPoints.push([x, y]);
+
+  // Keep only the last 50 points for a fading effect
+  // if (trailPoints.length > 50) {
+  //   trailPoints.shift();
+  // }
+
+  // Update the path with new points
+  mousePath.attr("d", d3.line()(trailPoints));
+});
+
+// // Optional: Clear the trail when the mouse leaves
+// svg.on("mouseleave", () => {
+//   trailPoints = [];
+//   mousePath.attr("d", ""); // Clear path
+// });
 
 
 // Create a force simulation with collision detection
@@ -462,6 +496,8 @@ label.on("click", (event, d) => {
     });
   }
 });
+
+
 
 
 // Handle window resizing
