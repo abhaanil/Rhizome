@@ -97,11 +97,10 @@ body {
 
 @media (max-width: 768px) {
   .mobileheader {
-    display: flex;
     height: 5vh;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 0px;
     padding-bottom: 0;
     padding-left: 15px;
@@ -399,6 +398,7 @@ svg {
 @media (max-width: 768px) {
   .mobilescreenshot {
     display: block;
+    margin-top: 20px;
     overflow: hidden;
   }
 }
