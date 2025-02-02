@@ -101,6 +101,7 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+    margin-top: 0%;
     padding-top: 0px;
     padding-bottom: 0;
     padding-left: 15px;
@@ -398,7 +399,7 @@ svg {
 @media (max-width: 768px) {
   .mobilescreenshot {
     display: block;
-    margin-top: 20px;
+    margin-top: 40px;
     overflow: hidden;
   }
 }
