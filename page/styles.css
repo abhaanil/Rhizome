@@ -52,21 +52,14 @@ body {
   }
 
   .column1 {
-    width: 100%;
-    height: auto !important;
-    /* Adjust height dynamically */
-    overflow-y: none;
-    /* Enable scrolling */
-    padding-left: 10;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
+    display: none;
   }
 
   .column2 {
     width: 100%;
     flex: 1;
     /* Ensures it takes up remaining space */
-    max-height: 75vh;
+    max-height: 96vh;
     /* Prevents it from growing infinitely */
     overflow-y: auto;
     /* Enables scrolling */
@@ -97,15 +90,17 @@ body {
 
 @media (max-width: 768px) {
   .mobileheader {
+    width: 100%;
     height: 5vh;
     display: flex;
+    background-color: #ffffff;
     align-items: baseline;
     justify-content: space-between;
     margin-top: 0%;
+    margin-right: 15px;
     padding-top: 0px;
-    padding-bottom: 0;
+    padding-bottom: 15px;
     padding-left: 15px;
-    padding-right: 15px;
     position: fixed;
   }
 
