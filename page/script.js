@@ -247,7 +247,7 @@ svg.on("mousemove", (event) => {
   trailPoints.push([x, y]);
 
   // Keep only the last 50 points for a fading effect
-  // if (trailPoints.length > 50) {
+  // if (trailPoints.length > 500) {
   //   trailPoints.shift();
   // }
 
