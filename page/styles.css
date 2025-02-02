@@ -46,7 +46,7 @@ body {
     width: 100%;
     height: auto !important;
     /* Adjust height dynamically */
-    overflow-y: auto;
+    overflow-y: none;
     /* Enable scrolling */
     padding-left: 10;
   }
@@ -63,6 +63,7 @@ body {
 }
 
 .header {
+  display: block;
   height: 5vh;
   display: flex;
   align-items: baseline;
@@ -70,6 +71,30 @@ body {
   padding-top: 0px;
   padding-bottom: 0;
 
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
+
+.mobileheader {
+  display: none;
+
+}
+
+@media (max-width: 768px) {
+  .mobileheader {
+    display: block;
+    height: 5vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    padding-top: 0px;
+    padding-bottom: 0;
+    padding-left: 15px;
+  }
 }
 
 .blank {
