@@ -94,12 +94,15 @@ body {
     width: 100%;
     height: 5vh;
     display: flex;
-    background-color: #ffffff;
+    color: #fff;
+    background-color: #1f1f1f;
     align-items: center;
-    align-items: baseline;
+
     justify-content: space-between;
-    padding: 0 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -137,7 +140,7 @@ body {
     /* Initially hidden */
     position: absolute;
     top: 40px;
-    right: 0;
+    right: 30px;
     background: white;
     list-style: none;
     padding: 0;
