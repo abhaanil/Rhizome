@@ -194,7 +194,7 @@ body {
 
 @media (max-width: 768px) {
   .description {
-    border-top: 1px solid black;
+    border-top: none;
     border-left: none;
     padding-top: 10;
     padding-left: 10px;
