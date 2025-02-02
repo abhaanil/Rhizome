@@ -98,20 +98,30 @@ body {
 @media (max-width: 768px) {
   .mobileheader {
     display: flex;
+    flex-direction: row;
     height: 5vh;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 0;
     padding-left: 15px;
     padding-right: 15px;
     position: fixed;
   }
 
+  .mobiletitle {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
   .hamburger-menu {
     font-size: 24px;
     cursor: pointer;
+    justify-content: end;
+
+
   }
 
   .dropdown-menu {
