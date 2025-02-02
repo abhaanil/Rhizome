@@ -223,9 +223,9 @@ const clusterSizeMap = {
 };
 
 const clusters = [
-  "RHIZOME", "ETHICS", "CAPITALISM", "SOCIAL MEDIA", "CLIMATE CHANGE", "DIGITAL MEDIA AND CRIME", "NFT", "ENTERTAINMENT", "DIGITAL DIVIDE", "VIRTUAL MATERIALITY", "NEW MEDIA ART",
-  "HYPERREALITIES", "AI",
-  "SPECULATIVE SCIENCE FICTION"
+  "Rhizome", "Ethics", "Digital Divide", "New Media Art", "Capitalism", "Entertainment",
+  "AI", "NFT", "Hyperrealities", "Digital Media and Crime", "Social Media",
+  "Speculative Science Fiction", "Climate Change", "Virtual Materiality"
 ];
 
 function toggleMenu() {
