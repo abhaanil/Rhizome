@@ -236,8 +236,8 @@ body {
 
 .article-title {
   font-family: 'Cascadia Mono', monospace;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: bold;
   fill: #1f1f1f;
 
 }

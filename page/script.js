@@ -268,6 +268,7 @@ document.addEventListener("click", (event) => {
 
 
 
+
 // Create an SVG container
 const svg = d3.select("#chart")
   .append("svg")
@@ -553,8 +554,6 @@ function goBack() {
   document.getElementById("chartbox").style.display = "block"; // Show chart again
   document.getElementById("infoSection").style.display = "none"; // Hide info section
 }
-
-
 
 
 // Handle window resizing
