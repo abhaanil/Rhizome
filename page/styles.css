@@ -243,6 +243,15 @@ body {
 
 }
 
+.article-title-main {
+  font-family: 'Cascadia Mono', monospace;
+  font-size: 18px;
+  font-style: italic;
+  fill: #1f1f1f;
+
+
+}
+
 .article-subtitle {
   font-family: 'Cascadia Mono', monospace;
   font-size: 14px;
