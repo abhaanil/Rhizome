@@ -501,7 +501,6 @@ label.on("click", (event, d) => {
 
 
 // Handle window resizing
-// Handle window resizing
 window.addEventListener("resize", () => {
   const testDiv = document.getElementById('chartbox');
 

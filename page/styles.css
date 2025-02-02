@@ -48,6 +48,7 @@ body {
     /* Adjust height dynamically */
     overflow-y: auto;
     /* Enable scrolling */
+    padding-left: 10;
   }
 
   .column2 {
