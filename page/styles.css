@@ -100,7 +100,7 @@ body {
     height: 5vh;
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 0%;
     padding-top: 0px;
     padding-bottom: 0;
@@ -113,7 +113,7 @@ body {
   .hamburger-menu {
     font-size: 24px;
     cursor: pointer;
-    justify-content: end;
+    margin-left: auto;
 
 
   }
@@ -139,10 +139,13 @@ body {
     border-bottom: 1px solid #ddd;
     color: #333;
     text-align: center;
+    font-family: 'Cascadia Mono', monospace;
+    font-weight: bold;
+    font-size: 13px;
   }
 
   .dropdown-menu li:hover {
-    background: #f5f5f5;
+    background: yellow;
   }
 
   /* Show menu when active */
