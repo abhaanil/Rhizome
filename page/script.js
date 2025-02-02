@@ -71,7 +71,6 @@ const data = {
 
     { id: "Speculative Science Fiction", group: "cluster" },
     { id: "Solar Punk", group: "subcluster" },
-    { id: "Transhumanism", group: "subcluster" },
     { id: "Indigenous Futurism", group: "subcluster" },
     { id: "Cyberpunk", group: "subcluster" },
 
@@ -169,7 +168,6 @@ const data = {
 
     // Speculative Science Fiction
     { source: "Speculative Science Fiction", target: "Solar Punk" },
-    { source: "Speculative Science Fiction", target: "Transhumanism" },
     { source: "Speculative Science Fiction", target: "Indigenous Futurism" },
     { source: "Speculative Science Fiction", target: "Cyberpunk" },
 
@@ -205,19 +203,19 @@ const clusterIconMap = {
 const clusterSizeMap = {
   "Ethics": { width: 110, height: 110 },
   "Digital Divide": { width: 250, height: 250 },
-  "New Media Art": { width: 140, height: 140 },
+  "New Media Art": { width: 130, height: 130 },
   "Capitalism": { width: 220, height: 220 },
-  "Entertainment": { width: 250, height: 250 },
+  "Entertainment": { width: 270, height: 270 },
   "AI": { width: 130, height: 130 },
   "NFT": { width: 120, height: 120 },
   "Hyperrealities": { width: 120, height: 120 },
 
   "Digital Media and Crime": { width: 180, height: 180 },
   "Social Media": { width: 180, height: 180 },
-  "Speculative Science Fiction": { width: 200, height: 200 },
+  "Speculative Science Fiction": { width: 250, height: 250 },
   "Climate Change": { width: 130, height: 130 },
   "Virtual Materiality": { width: 150, height: 150 },
-  "Rhizome": { width: 90, height: 90 },
+  "Rhizome": { width: 70, height: 70 },
 
 };
 
@@ -233,7 +231,7 @@ const svg = d3.select("#chart")
 // Create a force simulation with collision detection
 const simulation = d3.forceSimulation(data.nodes)
   .force("link", d3.forceLink(data.links).id(d => d.id).distance(110)) // Links
-  .force("charge", d3.forceManyBody().strength(-40)) // Node repulsion
+  .force("charge", d3.forceManyBody().strength(-50)) // Node repulsion
   .force("center", d3.forceCenter(width / 2, height / 2)) // Centering
   .force(
     "collision",
@@ -292,7 +290,7 @@ simulation.force(
       if (d.group === "maincluster") {
         return 98; // Collision radius for the main cluster (larger for the rectangle)
       }
-      return Math.max(size.width, size.height) / 2 + 10; // Default radius for other nodes
+      return Math.max(size.width, size.height) / 2 + 15; // Default radius for other nodes
     })
     .strength(1) // Higher strength for stricter collision enforcement
 );
