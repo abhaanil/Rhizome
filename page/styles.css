@@ -110,6 +110,7 @@ body {
     /* Takes up 2x space */
     text-align: left;
     /* Align text to the left */
+    font-size: 12px;
   }
 
   .about {
