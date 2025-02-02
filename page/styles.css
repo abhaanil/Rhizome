@@ -6,6 +6,7 @@ body {
 }
 
 
+
 .container {
   display: flex;
   flex-direction: row;
@@ -93,7 +94,7 @@ body {
     width: 100%;
     height: 5vh;
     display: flex;
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     align-items: center;
     align-items: baseline;
     justify-content: space-between;
@@ -504,4 +505,11 @@ figcaption {
   #infoSectionMobile {
     display: block;
   }
+}
+
+.comment img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  /* Optional: Adds space between icon and text */
 }
