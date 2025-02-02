@@ -36,7 +36,7 @@ body {
   .container {
     flex-direction: column;
     /* Stack elements vertically */
-    height: 96vh;
+    height: 93vh;
     /* Allow natural height */
     overflow: visible;
     /* Ensure content isn't cut off */
