@@ -501,17 +501,33 @@ label.on("click", (event, d) => {
 
 
 // Handle window resizing
+// Handle window resizing
 window.addEventListener("resize", () => {
   const testDiv = document.getElementById('chartbox');
 
-  // Use offsetWidth and offsetHeight to get the new dimensions of the container
+  // Get updated container dimensions
   const newWidth = testDiv.offsetWidth;
   const newHeight = testDiv.offsetHeight;
 
+  // Update SVG size
   svg.attr("width", newWidth).attr("height", newHeight);
 
-  simulation.force("center", d3.forceCenter(newWidth / 2, newHeight / 2));
+  // Update forces
+  simulation
+    .force("center", d3.forceCenter(newWidth / 2, newHeight / 2))
+    .force(
+      "collision",
+      d3.forceCollide()
+        .radius(d => {
+          const size = clusterSizeMap[d.id] || { width: 40, height: 40 };
+          return Math.max(size.width, size.height) / 2 + 10; // Ensure padding
+        })
+        .strength(1)
+    );
+
+  // Restart simulation with a higher alpha value to ensure a smooth transition
   simulation.alpha(1).restart();
 });
+
 
 
