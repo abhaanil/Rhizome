@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  height: 96vh;
+  height: 94vh;
   width: 100vw;
   overflow-y: auto;
 }
