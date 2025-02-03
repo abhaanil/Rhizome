@@ -237,7 +237,6 @@ body {
 .article-title {
   font-family: 'Cascadia Mono', monospace;
   font-size: 18px;
-  font-weight: normal;
   fill: #1f1f1f;
 
 
@@ -255,7 +254,6 @@ body {
 .article-subtitle {
   font-family: 'Cascadia Mono', monospace;
   font-size: 14px;
-  font-weight: normal;
   fill: #1f1f1f;
 
 }
@@ -271,7 +269,6 @@ body {
 .text {
   font-family: 'Cascadia Mono', monospace;
   font-size: 13px;
-  font-weight: normal;
   fill: #1f1f1f;
 
 }
