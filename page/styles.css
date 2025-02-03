@@ -20,7 +20,7 @@ body {
 }
 
 .loader {
-  border: 8px solid #000000;
+  border: 8px solid #ffffff;
   /* Light grey */
   border-top: 8px solid yellow;
   /* Blue */
