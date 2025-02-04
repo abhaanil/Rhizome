@@ -20,13 +20,13 @@ body {
 }
 
 .loader {
-  border: 8px solid #ffffff;
+  border: 15px solid #ffffff;
   /* Light grey */
   border-top: 8px solid yellow;
   /* Blue */
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   animation: spin 1s linear infinite;
 }
 
@@ -270,6 +270,14 @@ body {
 .article-title {
   font-family: 'Cascadia Mono', monospace;
   font-size: 18px;
+  fill: #1f1f1f;
+
+
+}
+
+.loading-text {
+  font-family: 'Cascadia Mono', monospace;
+  font-size: 13px;
   fill: #1f1f1f;
 
 
