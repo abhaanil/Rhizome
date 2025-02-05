@@ -222,6 +222,8 @@ const clusterSizeMap = {
 
 };
 
+
+
 const clusters = [
   "Rhizome", "Ethics", "Digital Divide", "New Media Art", "Capitalism", "Entertainment",
   "AI", "NFT", "Hyperrealities", "Digital Media and Crime", "Social Media",
