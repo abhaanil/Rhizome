@@ -205,17 +205,17 @@ const clusterIconMap = {
 
 const clusterSizeMap = {
   "Ethics": { width: 110, height: 110 },
-  "Digital Divide": { width: 250, height: 250 },
+  "Digital Divide": { width: 100, height: 100 },
   "New Media Art": { width: 130, height: 130 },
   "Capitalism": { width: 220, height: 220 },
-  "Entertainment": { width: 270, height: 270 },
-  "AI": { width: 130, height: 130 },
+  "Entertainment": { width: 230, height: 230 },
+  "AI": { width: 100, height: 100 },
   "NFT": { width: 120, height: 120 },
   "Hyperrealities": { width: 120, height: 120 },
 
-  "Digital Media and Crime": { width: 180, height: 180 },
-  "Social Media": { width: 180, height: 180 },
-  "Speculative Science Fiction": { width: 250, height: 250 },
+  "Digital Media and Crime": { width: 170, height: 170 },
+  "Social Media": { width: 200, height: 200 },
+  "Speculative Science Fiction": { width: 230, height: 230 },
   "Climate Change": { width: 130, height: 130 },
   "Virtual Materiality": { width: 150, height: 150 },
   "Rhizome": { width: 70, height: 70 },
@@ -320,7 +320,7 @@ const simulation = d3.forceSimulation(data.nodes)
       .radius(d => {
         // Use the larger dimension (width or height) as the collision radius
         const size = clusterSizeMap[d.id] || { width: 40, height: 40 }; // Default size if not defined
-        return Math.max(size.width, size.height) / 2 + 10; // Add padding (10px)
+        return Math.max(size.width, size.height) / 2 + 18; // Add padding (10px)
       })
       .strength(1) // Higher strength for stricter collision enforcement
   );
@@ -346,7 +346,7 @@ node.filter(d => d.group === "maincluster")
   .attr("class", "maincluster-rect")
   .attr("x", -180) // Center horizontally
   .attr("y", -31)  // Center vertically
-  .attr("width", 420) // Width of the rectangle
+  .attr("width", 350) // Width of the rectangle
   .attr("height", 40) // Height of the rectangle
   .attr("rx", 15) // Rounded corners
   .attr("ry", 15); // Rounded corners
@@ -355,8 +355,8 @@ node.filter(d => d.group === "maincluster")
 node.filter(d => d.group === "maincluster")
   .append("text")
   .attr("class", "maincluster-text")
-  .attr("x", 30) // Center horizontally
-  .attr("y", -8)  // Adjust text position
+  .attr("x", -8) // Center horizontally
+  .attr("y", -9)  // Adjust text position
   .attr("text-anchor", "middle")
   .attr("dominant-baseline", "middle")
   .text("NETWORKS AND POST-DIGITAL ART");
@@ -371,7 +371,7 @@ simulation.force(
       if (d.group === "maincluster") {
         return 98; // Collision radius for the main cluster (larger for the rectangle)
       }
-      return Math.max(size.width, size.height) / 2 + 15; // Default radius for other nodes
+      return Math.max(size.width, size.height) / 2 + 30; // Default radius for other nodes
     })
     .strength(1) // Higher strength for stricter collision enforcement
 );
@@ -382,7 +382,7 @@ simulation.force(
   d3.forceCollide()
     .radius(d => {
       const size = clusterSizeMap[d.id] || { width: 40, height: 40 }; // Default size if not defined
-      return Math.max(size.width, size.height) / 2 + 15; // Add padding (e.g., 15px) for better spacing
+      return Math.max(size.width, size.height) / 2 + 18; // Add padding (e.g., 15px) for better spacing
     })
     .strength(1) // Higher strength for stricter collision enforcement
 );

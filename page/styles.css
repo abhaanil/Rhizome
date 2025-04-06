@@ -54,7 +54,7 @@ body {
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: auto;
 
 }
 
@@ -440,7 +440,7 @@ svg {
 
 .maincluster-text {
   font-family: 'Cascadia Mono', monospace;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: bold;
   fill: #000;
   text-anchor: middle;
